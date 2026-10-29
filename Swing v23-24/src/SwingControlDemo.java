@@ -87,7 +87,7 @@ public class SwingControlDemo implements ActionListener {
         submitButton.addActionListener(new ButtonClickListener());
         cancelButton.addActionListener(new ButtonClickListener());
 
-        controlPanel.add(okButton);
+        controlPanel.add(okButton, BorderLayout.NORTH);
         controlPanel.add(submitButton);
         controlPanel.add(cancelButton);
 

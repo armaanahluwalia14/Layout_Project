@@ -32,7 +32,7 @@ public class Easy1 implements ActionListener {
     private void prepareGUI() {
         mainFrame = new JFrame("Java SWING Examples");
         mainFrame.setSize(WIDTH, HEIGHT);
-        mainFrame.setLayout(new GridLayout(2, 3));
+        mainFrame.setLayout(new GridLayout(3, 3));
 
         //menu at top
         cut = new JMenuItem("cut");
@@ -59,7 +59,7 @@ public class Easy1 implements ActionListener {
 
 //        ta = new JTextArea();
 //        ta.setBounds(50, 5, WIDTH-100, HEIGHT-50);
-//        mainFrame.add(mb);  //add menu bar
+//        mainFrame.add(fmb);  //add menu bar
 //        mainFrame.add(ta);//add typing area
 //        mainFrame.setJMenuBar(mb); //set menu bar
 
@@ -75,7 +75,7 @@ public class Easy1 implements ActionListener {
 //        controlPanel.setLayout(new FlowLayout()); //set the layout of the pannel
 //
 //        mainFrame.add(controlPanel);
-        mainFrame.add(statusLabel);
+    //    mainFrame.add(statusLabel);
         mainFrame.setVisible(true);
     }
 
@@ -84,6 +84,8 @@ public class Easy1 implements ActionListener {
         JButton okButton = new JButton("Button 1");
         JButton submitButton = new JButton("Button 2");
         JButton cancelButton = new JButton("Button 3");
+
+
 
         okButton.setActionCommand("OK");
         submitButton.setActionCommand("Submit");
@@ -95,6 +97,9 @@ public class Easy1 implements ActionListener {
         mainFrame.add(okButton);
         mainFrame.add(submitButton);
         mainFrame.add(cancelButton);
+      //  mainFrame.add(correctButton);
+        //mainFrame.add(wrongButton);
+
 
 
 //        controlPanel.add(okButton);
